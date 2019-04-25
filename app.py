@@ -25,13 +25,13 @@ def queryURL():
         try:
             reg = query_url(url, Query)
             if reg == 'null':
-                print('reg is ' + reg)
+                # print('reg is ' + reg)
                 return 'url is invalid, please provide valid url'   
             return reg
         except GraphQLError as e:
             return e.message
     else:
-        print("url is none")
+        # print("url is none")
         return 'Please provide url string'
     
 
